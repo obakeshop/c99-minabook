@@ -11584,11 +11584,21 @@ body {
   font-size: 1rem;
 }
 .head {
-  height: 52vh;
+  height: 50vh;
+}
+.about-jump, .about-space{
+  display: none;
 }
 .about {
-  height: 35vh;
-  padding-top: 3rem;
+  height: 30vh;
+  padding-top: 0rem;
+  width: 80%;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;
+}
+.about iframe {
+  width: 100%;
+  height: 100%;
 }
 @media (min-width: 768px) {
   .masthead {
@@ -11596,7 +11606,7 @@ body {
     padding: 0;
   }
   .head {
-    height: 70vh;
+    height: 50vh;
   }
   .about {
     height: 50vh;
@@ -11616,11 +11626,15 @@ body {
     padding: 0;
   }
   .head {
-    height: 95vh;
+    height: 75vh;
   }
   .about {
-    height: 60vh;
+    height: 45vh;
+    max-width: 700px;
     padding-top: 5rem;
+  }
+  .about-jump, .about-space{
+    display: inline;
   }
   .masthead .head h1, .masthead .head .h1 {
     font-size: 6.5rem;
@@ -11638,11 +11652,12 @@ body {
     padding: 0;
   }
   .head {
-    height: 90vh;
+    height: 100vh;
   }
   .about {
-    height: 108vh;
-    padding-top: 33rem;
+    height: 78vh;
+    max-width: 900px;
+    padding-top: 15rem;
   }
   .masthead .head h1, .masthead .head .h1 {
     font-size: 6.5rem;
@@ -11655,6 +11670,7 @@ body {
   }
 }
 
+
 .about p {
   margin-bottom: 5rem;
 }
@@ -11666,9 +11682,13 @@ body {
   padding: 2rem;
 }
 @media (min-width: 992px) {
-  .projects-section .featured-text {
+  .projects-section .featured-text.left {
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #64a19d;
+  }
+  .projects-section .featured-text.right {
+    padding: 0 2rem 0;
+    border-right: 0.5rem solid #64a19d;
   }
 }
 .projects-section .project-text {
@@ -11705,18 +11725,14 @@ body {
   border: 0;
 }
 
-.about {
-  width: 80%;
-  max-width: 900px;
-  aspect-ratio: 16 / 9;
-}
-.about iframe {
-  width: 100%;
-  height: 100%;
-}
 
 .members-section {
   padding: 10rem 0;
+  background: url("../assets/img/vacation_back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 .members-section .card {
   border: 0;
