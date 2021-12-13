@@ -52,3 +52,52 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+$(function(){
+    $('a[href^="#"]').click(function(){
+        //スクロールのスピード
+        var speed = 500;
+        //リンク元を取得
+        var href= $(this).attr("href");
+        //リンク先を取得
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        //リンク先までの距離を取得
+        var position = target.offset().top;
+        //スムーススクロール
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+    });
+});
+
+jQuery(function ($) {
+    var fadeIn = $('.fade-in');
+    $(window).on('scroll', function () {
+        $(fadeIn).each(function () {
+            var offset = $(this).offset().top;
+            var scroll = $(window).scrollTop(); 
+            var windowHeight = $(window).height();
+            if (scroll > offset - windowHeight + 150) {
+            $(this).addClass("scroll-in");
+            }
+        });
+    });
+});
+
+$(function(){
+    $(window).scroll(function (){
+        $('.fadein-ordered').each(function(){
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > position - windowHeight + 200){
+                $(function(){
+                    $('.fadein-ordered').each(function(i){
+                        $(this).delay(i * 200).queue(function(){
+                            $(this).addClass('active');
+                        });
+                    });
+                });
+            }
+        });
+    });
+});
