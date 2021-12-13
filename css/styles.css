@@ -11562,7 +11562,7 @@ body {
   height: 100vh;
   min-height: 35rem;
   padding: 0;
-  background: url("../assets/img/bg-masthead.jpg");
+  background: url("../assets/img/back/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11728,7 +11728,7 @@ body {
 
 .members-section {
   padding: 10rem 0;
-  background: url("../assets/img/vacation_back.jpg");
+  background: url("../assets/img/back/vacation_back.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
