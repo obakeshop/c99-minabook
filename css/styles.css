@@ -11587,6 +11587,7 @@ body {
   height: 52vh;
 }
 .about {
+  height: 35vh;
   padding-top: 3rem;
 }
 @media (min-width: 768px) {
@@ -11598,6 +11599,7 @@ body {
     height: 70vh;
   }
   .about {
+    height: 50vh;
     padding-top: 5rem;
   }
   .masthead {
@@ -11617,7 +11619,8 @@ body {
     height: 95vh;
   }
   .about {
-    padding-top: 15rem;
+    height: 60vh;
+    padding-top: 5rem;
   }
   .masthead .head h1, .masthead .head .h1 {
     font-size: 6.5rem;
@@ -11635,9 +11638,10 @@ body {
     padding: 0;
   }
   .head {
-    height: 110vh;
+    height: 90vh;
   }
   .about {
+    height: 70vh;
     padding-top: 15rem;
   }
   .masthead .head h1, .masthead .head .h1 {
@@ -11699,6 +11703,16 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   border: 0;
+}
+
+.about {
+  width: 80%;
+  max-width: 720px;
+  aspect-ratio: 16 / 9;
+}
+.about iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .members-section {
