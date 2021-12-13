@@ -11634,15 +11634,15 @@ body {
 }
 @media (min-width: 1200px) {
   .masthead {
-    height: 220vh;
+    height: 260vh;
     padding: 0;
   }
   .head {
     height: 90vh;
   }
   .about {
-    height: 70vh;
-    padding-top: 15rem;
+    height: 108vh;
+    padding-top: 33rem;
   }
   .masthead .head h1, .masthead .head .h1 {
     font-size: 6.5rem;
@@ -11707,7 +11707,7 @@ body {
 
 .about {
   width: 80%;
-  max-width: 720px;
+  max-width: 900px;
   aspect-ratio: 16 / 9;
 }
 .about iframe {
