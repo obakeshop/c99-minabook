@@ -11725,7 +11725,6 @@ body {
   border: 0;
 }
 
-
 .members-section {
   padding: 10rem 0;
   background: url("../assets/img/back/vacation_back.jpg");
@@ -11785,6 +11784,14 @@ body {
   width: 11rem;
 }
 
+.publication-section {
+  padding: 10rem 0;
+  background: url("../assets/img/back/pub.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
 
 .fade-in {
   opacity: 0;
