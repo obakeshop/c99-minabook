@@ -476,6 +476,7 @@ output {
 
 iframe {
   border: 0;
+  border-radius: 5px;
 }
 
 summary {
@@ -11830,6 +11831,8 @@ body {
   padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
   height: 0;
   overflow: hidden;
+  max-width: 720px;
+  margin: auto;
 }
 
 .movie-wrap iframe {
@@ -11838,4 +11841,5 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  max-height: 480px;
 }
